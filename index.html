@@ -33,9 +33,7 @@
                 <!-- List -->
                 <h2>List</h2>
                 <ul>
-                    <li>Programmare</li>
-                    <li>Programmare</li>
-                    <li>Programmare</li>
+                    <li v-for="memo in toDo" :class="{'completed': isDone === memo.done}">{{ memo.text }}</li>
                 </ul>
             </div>
             <!-- End Container -->

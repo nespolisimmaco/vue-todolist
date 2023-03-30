@@ -4,6 +4,7 @@ createApp({
     data() {
         return {
             toDoInput: "",
+            isDone: true,
             toDo: [
                 {
                     text: "Svolgere l'esercizio",
@@ -29,6 +30,6 @@ createApp({
         }
     },
     methods: {
-        
+
     }
 }).mount("#app");
