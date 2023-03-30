@@ -9,9 +9,39 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Vue Js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <img src="img/logo.svg" alt="Boolean logo">
+        </header>
+        <!-- End Header -->
     
+        <!-- Main -->
+        <main>
+            <!-- Container -->
+            <div class="container">
+                <h1>TO DO LIST</h1>
+                <!-- Input field -->
+                <input type="text" id="todo-input" placeholder="Aggiungi un promemoria">
+                <button>Aggiungi</button>
+                <!-- List -->
+                <h2>List</h2>
+                <ul>
+                    <li>Programmare</li>
+                    <li>Programmare</li>
+                    <li>Programmare</li>
+                </ul>
+            </div>
+            <!-- End Container -->
+        </main>
+        <!-- End Main -->
+    </div>
     <!-- Javascript -->
     <script src="js/script.js"></script>
 </body>

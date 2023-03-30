@@ -1,0 +1,68 @@
+/* ********** RESET ********** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ********** GENERAL ********** */
+body {
+    background-color: #374A67;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* ********** HEADER ********** */
+header {
+    height: 80px;
+    text-align: center;
+    background-color: #9E7B9B;
+}
+
+header img {
+   height: 100%;
+}
+
+/* ********** MAIN ********** */
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* Input field */
+#todo-input {
+    padding: .7rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    margin: 1.5rem 0;
+}
+
+/* Add button */
+button {
+    background-color: white;
+    border: none;
+    margin-left: 1rem;
+    padding: .7rem 1.5rem;
+    border-radius: 10px;
+    background-color: #00df6b;
+    color: white;
+    font-weight: 600;
+}
+
+/* List */
+li {
+    padding: 1.5rem 0;
+    border-bottom: 2px solid white;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
