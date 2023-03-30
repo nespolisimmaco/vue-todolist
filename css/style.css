@@ -47,6 +47,10 @@ h1 {
     margin: 1.5rem 0;
 }
 
+.error {
+    color: red;
+}
+
 /* Add button */
 button {
     background-color: white;
@@ -57,6 +61,7 @@ button {
     background-color: #00df6b;
     color: white;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* List */
