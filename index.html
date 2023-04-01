@@ -34,7 +34,10 @@
                 <!-- List -->
                 <h2>List</h2>
                 <ul>
-                    <li v-for="memo in toDo" :class="{'completed': isDone === memo.done}">{{ memo.text }}</li>
+                    <li v-for="(memo, index) in toDo">
+                        <div :class="{'completed': memo.done}" @click="deleteMemo(index)">{{ memo.text }}</div>
+                        <span class="remove" @click="removeToDo(index)">&cross;</span>
+                    </li>
                 </ul>
             </div>
             <!-- End Container -->

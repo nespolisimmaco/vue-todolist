@@ -3,12 +3,11 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            isDone: true,
             error: false,
             toDo: [
                 {
                     text: "Svolgere l'esercizio",
-                    done: true
+                    done: false
                 },
                 {
                     text: "Comprare il pane",
@@ -16,7 +15,7 @@ createApp({
                 },
                 {
                     text: "Portare a spasso il cane",
-                    done: true
+                    done: false
                 },
                 {
                     text: "Andare in palestra",
@@ -24,7 +23,7 @@ createApp({
                 },
                 {
                     text: "Chiamare i nonni",
-                    done: true
+                    done: false
                 },
             ],
             // Nuovo todo
@@ -50,6 +49,12 @@ createApp({
                 });
                 this.newToDo.text = "";
             }
+        },
+        removeToDo(indexToRemove) {
+            this.toDo.splice(indexToRemove, 1);
+        },
+        deleteMemo(index) {
+            this.toDo[index].done = !this.toDo[index].done;
         }
     }
 }).mount("#app");
